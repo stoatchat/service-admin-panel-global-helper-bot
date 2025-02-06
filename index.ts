@@ -73,7 +73,10 @@ class HelperBot extends RedisEventListener {
             return;
           }
 
-          if (server.owner === message.author) {
+          if (
+            server.owner === message.author ||
+            message.author === "01EX2NCWQ0CHS3QJF0FEQS1GR4"
+          ) {
             if (
               await adminDiscoverRequests().findOne({
                 serverId: server._id,
