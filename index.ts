@@ -32,7 +32,7 @@ class HelperBot extends RedisEventListener {
     }
   }
 
-  RE_INVITE = /rvlt.gg\/([A-Za-z0-9]+)/;
+  RE_INVITE = /(?:rvlt.gg|stt.gg)\/([A-Za-z0-9]+)/;
   RE_ID = /[A-Z0-9]{26}/;
 
   /**
